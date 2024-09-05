@@ -8,4 +8,10 @@ TextStyle txtBold24 = TextStyle(
   color: bluePrimary,
 );
 
-TextStyle txt16 = const TextStyle(fontSize: 16.0, color: Colors.black);
+TextStyle txt16 = const TextStyle(
+  fontSize: 16.0,
+);
+
+TextStyle txt20 = const TextStyle(fontSize: 16.0, color: Colors.white);
+
+TextStyle txtBtn20 = TextStyle(fontSize: 16.0, color: bluePrimary);

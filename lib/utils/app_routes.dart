@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:hospital_management_system/screen/intro/view/intro_screen.dart';
-import 'package:hospital_management_system/screen/splash/view/splash_screen.dart';
+import 'package:hospital_management_system/screen/file_import.dart';
+
 
 Map<String,WidgetBuilder> app_routes={
   '/': (context) => const SplashScreen(),
   'intro': (context) => const IntroScreen(),
+  'welcome': (context) => const WelcomeScreen(),
+  'signIn': (context) => const SignInScreen(),
+
 };
