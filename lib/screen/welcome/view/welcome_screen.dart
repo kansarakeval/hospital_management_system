@@ -43,7 +43,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   buttonStyle: ButtonStyle(
                     backgroundColor: WidgetStatePropertyAll(bluePrimary),
                   ),
-                ),SizedBox(
+                ),
+                SizedBox(
                   height: RS.h * 0.03,
                 ),
                 CustomElevatedButton(

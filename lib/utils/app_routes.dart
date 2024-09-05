@@ -7,5 +7,6 @@ Map<String,WidgetBuilder> app_routes={
   'intro': (context) => const IntroScreen(),
   'welcome': (context) => const WelcomeScreen(),
   'signIn': (context) => const SignInScreen(),
+  'signUp': (context) => const SignUpScreen(),
 
 };

@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:hospital_management_system/utils/theme/app_images.dart';
-import 'package:hospital_management_system/utils/theme/size.dart';
+part of '../../../file_import.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
