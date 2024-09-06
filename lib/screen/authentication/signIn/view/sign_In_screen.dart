@@ -28,9 +28,9 @@ class _SignInScreenState extends State<SignInScreen> {
                   children: [
                     Image.asset(
                       signInImage,
-                      height: RS.h*0.30,
+                      height: RS.h*0.35,
                     ),
-                    SizedBox(height: RS.h*0.05),
+                    SizedBox(height: RS.h*0.03),
                      Text(signIn, style: txtBold24),
                     SizedBox(height: RS.h*0.03),
                     CustomTextFormField(
@@ -71,15 +71,36 @@ class _SignInScreenState extends State<SignInScreen> {
                         return null;
                       },
                     ),
+                    SizedBox(height: RS.h*0.01),
+                    Align(
+                      alignment: Alignment.centerRight,
+                        child: InkWell(
+                            onTap: () {
+                              Get.toNamed('forget');
+                            },
+                            child: Text(forgetPassword,style: txtColor15,)),),
                     SizedBox(height: RS.h*0.03),
                     CustomElevatedButton(
                       onPressed: () {
+                        Get.toNamed('verify');
                       },
                       text: btnSignIn,
                       style: txt20,
                       buttonStyle: ButtonStyle(
                         backgroundColor: WidgetStatePropertyAll(bluePrimary),
                       ),
+                    ),
+                    SizedBox(height: RS.h*0.04),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(account, style: txt15),
+                        InkWell(
+                          onTap: () {
+                            Get.toNamed('signUp');
+                          },
+                            child: Text(signUp, style: txtColor15)),
+                      ],
                     ),
                   ],
                 ),

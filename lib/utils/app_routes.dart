@@ -8,5 +8,9 @@ Map<String,WidgetBuilder> app_routes={
   'welcome': (context) => const WelcomeScreen(),
   'signIn': (context) => const SignInScreen(),
   'signUp': (context) => const SignUpScreen(),
+  'forget': (context) => const ForgetPassword(),
+  'verify': (context) => const VerifyScreen(),
+  'dash': (context)=> const DashScreen(),
+  'profile': (context)=> const ProfileScreen(),
 
 };
