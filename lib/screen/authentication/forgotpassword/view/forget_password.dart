@@ -1,16 +1,15 @@
 part of '../../../file_import.dart';
 
-class SignUpScreen extends StatefulWidget {
-  const SignUpScreen({super.key});
+class ForgetPassword extends StatefulWidget {
+  const ForgetPassword({super.key});
 
   @override
-  State<SignUpScreen> createState() => _SignUpScreenState();
+  State<ForgetPassword> createState() => _ForgetPasswordState();
 }
 
-class _SignUpScreenState extends State<SignUpScreen> {
+class _ForgetPasswordState extends State<ForgetPassword> {
   final formKey = GlobalKey<FormState>();
   TextEditingController txtEmail = TextEditingController();
-  TextEditingController txtPhone = TextEditingController();
   TextEditingController txtPassword = TextEditingController();
   TextEditingController txtConformPassword = TextEditingController();
 
@@ -28,11 +27,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 child: Column(
                   children: [
                     Image.asset(
-                      signUpImage,
+                      forgetImage,
                       height: RS.h*0.35,
                     ),
                     SizedBox(height: RS.h*0.03),
-                    Text(signUp, style: txtBold24),
+                    Text(forget, style: txtBold24),
                     SizedBox(height: RS.h*0.03),
                     CustomTextFormField(
                       controller: txtEmail,
@@ -42,19 +41,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       validator: (value) {
                         if (value == null || value.isEmpty) {
                           return vEmail;
-                        }
-                        return null;
-                      },
-                    ),
-                    SizedBox(height: RS.h*0.02),
-                    CustomTextFormField(
-                      controller: txtPhone,
-                      hintText: phone,
-                      prefixIcon: Icons.phone,
-                      keyboardType: TextInputType.phone,
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return vPhone;
                         }
                         return null;
                       },
@@ -90,7 +76,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       onPressed: () {
                         Get.offAllNamed('signIn');
                       },
-                      text: btnSignUp,
+                      text: submit,
                       style: txt20,
                       buttonStyle: ButtonStyle(
                         backgroundColor: WidgetStatePropertyAll(bluePrimary),

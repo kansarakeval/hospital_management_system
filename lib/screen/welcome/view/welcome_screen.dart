@@ -48,7 +48,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   height: RS.h * 0.03,
                 ),
                 CustomElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.toNamed('signUp');
+                  },
                   text: btnSignUp,
                   style: txtBtn20,
                   buttonStyle: const ButtonStyle(

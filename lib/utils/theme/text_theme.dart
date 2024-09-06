@@ -15,3 +15,7 @@ TextStyle txt16 = const TextStyle(
 TextStyle txt20 = const TextStyle(fontSize: 16.0, color: Colors.white);
 
 TextStyle txtBtn20 = TextStyle(fontSize: 16.0, color: bluePrimary);
+
+TextStyle txtColor15 = TextStyle(fontSize: 15.0, color: bluePrimary);
+
+TextStyle txt15 = TextStyle(fontSize: 15.0);

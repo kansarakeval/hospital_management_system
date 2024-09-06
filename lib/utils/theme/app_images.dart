@@ -6,3 +6,4 @@ String doctorImage3 = "$path/men3.png";
 String welcomeImage = "$path/welcomeImage.png";
 String signInImage = "$path/sign In.png";
 String signUpImage = "$path/sign Up.png";
+String forgetImage = "$path/forget.png";
