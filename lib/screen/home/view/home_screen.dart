@@ -10,6 +10,19 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(child: Scaffold());
+    return SafeArea(
+      child: Scaffold(
+        floatingActionButton: FloatingActionButton(onPressed: () {
+
+        },),
+      ),
+    );
+
+
+
+
+
+
   }
+
 }
