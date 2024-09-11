@@ -8,13 +8,10 @@ class DashScreen extends StatefulWidget {
 }
 
 class _DashScreenState extends State<DashScreen> {
-  final DashController controller = Get.put(DashController());
-
   List<Widget> screen =  [
     const HomeScreen(),
     const HomeScreen(),
     const HomeScreen(),
-    const ProfileScreen()
   ];
 
   @override
@@ -28,23 +25,12 @@ class _DashScreenState extends State<DashScreen> {
         children: screen,
       ),
       ),
-      bottomNavigationBar: Obx(() => CurvedNavigationBar(
         backgroundColor: Colors.white,
         color: bluePrimary,
         buttonBackgroundColor: bluePrimary,
         height: 60,
-        index: controller.screenIndex.value,
         items: const [
-          Icon(LineIcons.home, color: Colors.white),
-          Icon(LineIcons.stethoscope, color: Colors.white),
-          Icon(LineIcons.doctor, color: Colors.white),
-          Icon(LineIcons.user, color: Colors.white),
         ],
-        onTap: (index) {
-          // controller.screenIndex.value = index;
-          // controller.pageController.value.jumpToPage(index);
-        },
-      )),
     );
   }
 }
