@@ -19,7 +19,6 @@ class _ForgetPasswordState extends State<ForgetPassword> {
       child: Form(
         key: formKey,
         child: Scaffold(
-          backgroundColor: Colors.white,
           body: Padding(
             padding: const EdgeInsets.all(10),
             child: Center(
