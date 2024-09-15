@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:hospital_management_system/screen/details/view/details_screen.dart';
 import 'package:hospital_management_system/utils/app_routes.dart';
 import 'package:hospital_management_system/utils/theme/size.dart';
 
@@ -23,6 +24,7 @@ class _MyAppState extends State<MyApp> {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       routes: app_routes,
+      onUnknownRoute: (settings) => MaterialPageRoute(builder: (context) => DetailsScreen(),),
     );
   }
 }

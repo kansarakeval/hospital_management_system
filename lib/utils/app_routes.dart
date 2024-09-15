@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hospital_management_system/screen/details/view/details_screen.dart';
 import 'package:hospital_management_system/screen/file_import.dart';
 
 
@@ -10,6 +11,7 @@ Map<String,WidgetBuilder> app_routes={
   'signUp': (context) => const SignUpScreen(),
   'forget': (context) => const ForgetPassword(),
   'verify': (context) => const VerifyScreen(),
-  'dash': (context)=> const DashScreen()
+  'dash': (context)=> const DashScreen(),
+  // 'detail':(context)=> const DetailsScreen(),
 
 };

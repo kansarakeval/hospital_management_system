@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:hospital_management_system/utils/theme/color.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -12,17 +14,15 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        floatingActionButton: FloatingActionButton(onPressed: () {
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: bluePrimary,
+          onPressed: () {
+            Get.toNamed('detail');
 
-        },),
+          },
+          child: Icon(Icons.add),
+        ),
       ),
     );
-
-
-
-
-
-
   }
-
 }
