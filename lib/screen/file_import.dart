@@ -2,6 +2,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
 import 'package:get/get.dart';
+import 'package:hospital_management_system/screen/doctor/view/doctor_screen.dart';
 import 'package:hospital_management_system/utils/theme/app_images.dart';
 import 'package:hospital_management_system/utils/theme/color.dart';
 import 'package:hospital_management_system/utils/theme/text.dart';

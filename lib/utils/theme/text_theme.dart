@@ -23,5 +23,4 @@ TextStyle txt15 = const TextStyle(fontSize: 15.0);
 TextStyle bodyLargeBold = const TextStyle(fontSize: 20,fontWeight: FontWeight.bold);
 TextStyle bodyLarge = const TextStyle(fontSize: 20);
 TextStyle bodyMedium = const TextStyle(fontSize: 18);
-TextStyle bodySmall = const TextStyle(fontSize: 15);
 

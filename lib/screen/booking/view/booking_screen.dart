@@ -19,15 +19,20 @@ class _BookingScreenState extends State<BookingScreen> {
   TextEditingController txtDocterName = TextEditingController();
   int selectGroup = 0;
 
+  ProfileController profileController = Get.put(ProfileController());
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: const Text(
+          title:  Text(
             booking,
+            style: Theme.of(context).textTheme.titleLarge,
           ),
+          elevation: 0,
+          iconTheme: IconThemeData(color: profileController.islight.value?Colors.black:Colors.white),
         ),
         body: Padding(
           padding: EdgeInsets.all(10.0),

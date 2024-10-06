@@ -8,11 +8,12 @@ class DashScreen extends StatefulWidget {
 }
 
 class _DashScreenState extends State<DashScreen> {
-  final DashController controller = Get.put(DashController());
+  ProfileController profileController = Get.put(ProfileController());
+   DashController controller = Get.put(DashController());
 
   List<Widget> screen =  [
     const HomeScreen(),
-    const HomeScreen(),
+    const DoctorScreen(),
     const HomeScreen(),
     const ProfileScreen(),
   ];
@@ -28,7 +29,7 @@ class _DashScreenState extends State<DashScreen> {
         children: screen,
       )),
       bottomNavigationBar: Obx(() => CurvedNavigationBar(
-        backgroundColor: Colors.white,
+        backgroundColor: profileController.islight.value?white:black,
         color: bluePrimary,
         buttonBackgroundColor: bluePrimary,
         height: 60,
