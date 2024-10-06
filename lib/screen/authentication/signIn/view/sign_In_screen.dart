@@ -93,7 +93,7 @@ class _SignInScreenState extends State<SignInScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(account, style: txt15),
+                        Text(account, style: Theme.of(context).textTheme.titleSmall),
                         InkWell(
                           onTap: () {
                             Get.toNamed('signUp');

@@ -24,7 +24,7 @@ class PageWidget {
       ),
       bodyWidget: Text(
         body,
-        style: txt16,
+        style: Theme.of(context).textTheme.titleMedium,
         textAlign: TextAlign.center,
       ),
       image: Center(

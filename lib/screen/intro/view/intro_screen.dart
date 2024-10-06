@@ -31,7 +31,7 @@ class IntroScreen extends StatelessWidget {
             Get.offAllNamed('welcome');
           },
           showSkipButton: true,
-          skip: const Text("Skip", style: TextStyle()),
+          skip:  Text("Skip", style: TextStyle(color: bluePrimary)),
           next: Icon(Icons.arrow_forward, color: bluePrimary),
           done: Text("Done", style: TextStyle(fontWeight: FontWeight.w600, color: bluePrimary)),
           dotsDecorator: DotsDecorator(
