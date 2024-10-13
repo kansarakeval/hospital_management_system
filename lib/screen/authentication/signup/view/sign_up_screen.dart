@@ -20,7 +20,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
       child: Form(
         key: formKey,
         child: Scaffold(
-          backgroundColor: Colors.white,
           body: Padding(
             padding: const EdgeInsets.all(10),
             child: Center(

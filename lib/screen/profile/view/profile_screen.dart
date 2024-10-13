@@ -8,17 +8,26 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
+  ProfileController controller = Get.put(ProfileController());
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         body: Column(
           children: [
-            ListTileWidget(
+            ListTile(
               title: Text("theme"),
               leading: Icon(Icons.dark_mode_outlined),
-              trailing: Icon(Icons.navigate_next),
-              onTap: () {},
+              trailing: Obx(
+                    () => Switch(
+                  value: controller.islight.value,
+                  onChanged: (value) {
+                    ShareHelper shr = ShareHelper();
+                    shr.setTheme(value);
+                    controller.changeTheme();
+                  },
+                ),
+              ),
             ),
             ListTileWidget(
               title: Text("Abu"),

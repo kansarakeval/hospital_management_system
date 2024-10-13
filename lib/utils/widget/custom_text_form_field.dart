@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hospital_management_system/utils/theme/color.dart';
 
 class CustomTextFormField extends StatefulWidget {
   final TextEditingController controller;
@@ -28,6 +29,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      cursorColor: bluePrimary,
       controller: widget.controller,
       keyboardType: widget.keyboardType,
       validator: widget.validator,

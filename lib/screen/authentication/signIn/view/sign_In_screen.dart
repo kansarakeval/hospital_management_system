@@ -19,7 +19,6 @@ class _SignInScreenState extends State<SignInScreen> {
       child: Form(
         key: formKey,
         child: Scaffold(
-          backgroundColor: Colors.white,
           body: Padding(
             padding: const EdgeInsets.all(10),
             child: Center(
@@ -94,7 +93,7 @@ class _SignInScreenState extends State<SignInScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(account, style: txt15),
+                        Text(account, style: Theme.of(context).textTheme.titleSmall),
                         InkWell(
                           onTap: () {
                             Get.toNamed('signUp');
