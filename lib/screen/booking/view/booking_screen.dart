@@ -184,8 +184,10 @@ class _BookingScreenState extends State<BookingScreen> {
                 Center(
                   child: ElevatedButton(
                     style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(bluePrimary)),
-                    onPressed: () {},
-                    child: Text(submit,style: TextStyle(color: white),),
+                    onPressed: () {
+                      Get.back();
+                    },
+                    child: Text(submit,style: TextStyle(fontSize: 15),),
                   ),
                 ),
               ],

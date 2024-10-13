@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:hospital_management_system/utils/theme/color.dart';
 
 class DoctorDetailsScreen extends StatefulWidget {
@@ -133,7 +134,9 @@ class _DoctorDetailsScreenState extends State<DoctorDetailsScreen> {
                           icon: Icon(Icons.chat, color: bluePrimary),
                         ),
                         ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Get.offNamed('booking');
+                          },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: bluePrimary,
                             elevation: 0,// Button color
@@ -142,7 +145,7 @@ class _DoctorDetailsScreenState extends State<DoctorDetailsScreen> {
                             ),
                             padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
                           ),
-                          child: Text("Make An Appointment"),
+                          child: Text("Make An Appointment",style: TextStyle(fontSize: 15),),
                         ),
                       ],
                     ),
