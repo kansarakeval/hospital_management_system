@@ -14,7 +14,7 @@ class _DashScreenState extends State<DashScreen> {
   List<Widget> screen =  [
     const HomeScreen(),
     const DoctorScreen(),
-    const HomeScreen(),
+    const SurgeryScreen(),
     const ProfileScreen(),
   ];
 

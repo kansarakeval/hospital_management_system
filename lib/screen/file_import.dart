@@ -33,5 +33,6 @@ part 'home/view/home_screen.dart';
 part 'booking/view/booking_screen.dart';
 part 'profile/view/profile_screen.dart';
 part 'profile/controller/profile_controller.dart';
+part 'surgery/view/surgery_screen.dart';
 
 

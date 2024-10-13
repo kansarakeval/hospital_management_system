@@ -15,5 +15,6 @@ Map<String,WidgetBuilder> app_routes={
   'booking':(context)=> const BookingScreen(),
   'profile': (context) => const ProfileScreen(),
   'doctorDetails': (context) => const DoctorDetailsScreen(),
+  'surgery': (context) => const SurgeryScreen(),
 
 };
